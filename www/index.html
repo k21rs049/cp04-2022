@@ -39,6 +39,9 @@
             $('#btnC').click(function(e) {
                 btnCClick(e);
             });
+            $('#btnD').click(function(e) {
+                btnDClick(e);
+            });
             init();
         });
 
@@ -162,6 +165,7 @@
             $('#btnA').prop('disabled', false);
             $('#btnB').prop('disabled', false);
             $('#btnC').prop('disabled', false);
+            $('#btnD').prop('disabled', false);
 
         }
 
@@ -206,6 +210,10 @@
 
         }
 
+        function btnDClick(e) {
+            active = true;
+        }
+
 
         // 繰り返し実行する処理
         function timer() {
@@ -237,6 +245,7 @@
     <button id="btnA">Start</button>
     <button id="btnB">Stop</button>
     <button id="btnC">Set</button>
+    <button id="btnD">Restart</button>
     <input type="number" id="minute" value=1>
     <input type="number" id="second" value=0>
 </body>
